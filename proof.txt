@@ -1,0 +1,276 @@
+Script started on Fri 23 Nov 2018 08:37:23 PM HST
+]0;bradenb@uhx02:~/project2[?1034huhx02:/home/b/bradenb/project2% ls
+proof.txt  [0m[38;5;27mSCCS[0m
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% sccs get getrelease
+get: warning: SCCS/s.getrelease: No id keywords.
+1.2
+4 lines
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% chmod 777 getlre[K[K[Krelease
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% ./getrelease
+get: warning: SCCS/s.UI.c: No id keywords.
+1.2
+208 lines
+get: warning: SCCS/s.database.c: No id keywords.
+1.5
+399 lines
+get: warning: SCCS/s.Makefile: No id keywords.
+1.2
+6 lines
+get: warning: SCCS/s.record.h: No id keywords.
+1.2
+7 lines
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% make ui
+gcc -ansi -pedantic-errors -Wall -c UI.c
+gcc -ansi -pedantic-errors -Wall -c database.c record.h
+gcc -o ui UI.o database.o  
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% rm UI.c UI.o database.c database.o record.h record.h.gch ui getrelease Makefile
+rm: remove write-protected regular file ‘UI.c’? yes
+rm: remove write-protected regular file ‘database.c’? yes
+rm: remove write-protected regular file ‘record.h’? yes
+rm: remove write-protected regular file ‘Makefile’? yes
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% ls
+proof.txt  [0m[38;5;27mSCCS[0m
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% sccs get getrelease2
+get: warning: SCCS/s.getrelease2: No id keywords.
+1.2
+5 lines
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% chmod 777 getrelease2
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% ./getrelease2
+get: warning: SCCS/s.UI.cpp: No id keywords.
+1.4
+204 lines
+get: warning: SCCS/s.llist.h: No id keywords.
+1.3
+29 lines
+get: warning: SCCS/s.record.h: No id keywords.
+1.2
+7 lines
+get: warning: SCCS/s.llist.cpp: No id keywords.
+1.4
+517 lines
+get: warning: SCCS/s.GNUmakefile: No id keywords.
+1.2
+12 lines
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% ls
+[0m[38;5;34mgetrelease2[0m  GNUmakefile  llist.cpp  llist.h  proof.txt  record.h  [38;5;27mSCCS[0m  UI.cpp
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% make pr2
+g++ -ansi -pedantic-errors -Wall -c UI.cpp
+g++ -ansi -pedantic-errors -Wall -c llist.cpp
+g++ -o pr2 UI.o llist.o
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% ./pr2
+Welcome to the Bank Database, please use numbers 1 through 5 to select an option from the Database
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+1
+Please enter your address below, press the '/' key to finish!
+1234 Hnolulu
+hawaii /
+Please enter your Account Number here: 
+1
+Please enter your name here:
+braden
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+3
+Account Number: 1
+Name: braden
+Address: 1234 Hnolulu
+hawaii 
+You have printed all the records within the Bank Database
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+2
+Enter a account number to print: 
+1
+Account Number: 1
+Name: braden
+Address: 1234 Hnolulu
+hawaii 
+Here is your record
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+1
+Please enter your address below, press the '/' key to finish!
+431 smith drive
+oahu /
+Please enter your Account Number here: 
+2
+Please enter your name here:
+mom   bb ob
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+3
+Account Number: 1
+Name: braden
+Address: 1234 Hnolulu
+hawaii 
+Account Number: 2
+Name: bob
+Address: 431 smith drive
+oahu 
+You have printed all the records within the Bank Database
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+2
+Enter a account number to print: 
+2
+Account Number: 2
+Name: bob
+Address: 431 smith drive
+oahu 
+Here is your record
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+1
+Please enter your address below, press the '/' key to finish!
+2311 driver ave
+a kauai /
+Please enter your Account Number here: 
+0
+Please enter your name here:
+smithers
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+3
+Account Number: 0
+Name: smithers
+Address: 2311 driver ave
+kauai 
+Account Number: 1
+Name: braden
+Address: 1234 Hnolulu
+hawaii 
+Account Number: 2
+Name: bob
+Address: 431 smith drive
+oahu 
+You have printed all the records within the Bank Database
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+4
+Enter an account number to delete from the database
+0
+The record with account number 0 has been deleted
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+3
+Account Number: 1
+Name: braden
+Address: 1234 Hnolulu
+hawaii 
+Account Number: 2
+Name: bob
+Address: 431 smith drive
+oahu 
+You have printed all the records within the Bank Database
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+4
+Enter an account number to delete from the database
+1
+The record with account number 1 has been deleted
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+3
+Account Number: 2
+Name: bob
+Address: 431 smith drive
+oahu 
+You have printed all the records within the Bank Database
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+2
+Enter a account number to print: 
+2
+Account Number: 2
+Name: bob
+Address: 431 smith drive
+oahu 
+Here is your record
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+0
+Invalid choice, please try again
+ [1] Add a record 
+ [2] Print a record 
+ [3] Print all available records 
+ [4] Delete a Record 
+ [5] Reverse the database 
+ [6] Quit
+Enter your option here
+6
+Thank you for using the Bank Database, you have exited the program!
+]0;bradenb@uhx02:~/project2uhx02:/home/b/bradenb/project2% exit
+exit
+
+Script done on Fri 23 Nov 2018 08:40:13 PM HST
